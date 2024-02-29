@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Web Lista de la Compra" />
+    <meta name="description" content="Lista de la compra en HTML y CSS" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="/carrito-favicon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="shopping-bag-svgrepo-com.svg"
+      type="image/x-icon"
+    />
     <title>Lista de la compra</title>
   </head>
   <body>
@@ -13,36 +17,64 @@
       <h1>Lista de la compra</h1>
       <nav>
         <ul>
-          <li>Principal</li>
-          <li>Lista</li>
-          <li>Acerca de</li>
+          <li><a href="#">Principal</a></li>
+          <li>
+            <a href="#"><strong>Lista</strong></a>
+          </li>
+          <li><a href="#">Acerca de</a></li>
         </ul>
       </nav>
     </header>
     <div>
       <main>
         <section>
-      <img src="/+favicon.png" height="5%" width="5%" />
-      <h2>2/3 Comprados</h2>
-    </section>
-    <div>
-      <form method="get" action="">
-        <input name="pan" type="checkbox" /><del>Pan</del>
-        <br />
-        <input name="azucar" type="checkbox" />Azucar
-        <br />
-        <input name="leche" type="checkbox" /><del>Leche</del>
-      </form>
+          <a href="form.html"><div>🞧</div></a>
+          <h2>2/3 comprados</h2>
+        </section>
+        <section>
+          <ul>
+            <li>
+              <div>
+                <input type="checkbox" name="pan" />
+                <label for="pan">Pan</label>
+              </div>
+              <div>
+                <p>0.75€</p>
+                <img src="img/delete.png" alt="Icono de cerrar" width="15" />
+              </div>
+            </li>
+            <li>
+              <div>
+                <input type="checkbox" name="azucar" />
+                <label for="azucar">Azúcar</label>
+              </div>
+              <div>
+                <p></p>
+                <img src="img/delete.png" alt="Icono de cerrar" width="15" />
+              </div>
+            </li>
+            <li>
+              <div>
+                <input type="checkbox" name="leche" />
+                <label for="leche">Leche</label>
+              </div>
+              <div>
+                <p>1.20€</p>
+                <img src="img/delete.png" alt="Icono de cerrar" width="15" />
+              </div>
+            </li>
+          </ul>
+          <hr />
+          <h2>1.95€</h2>
+        </section>
+      </main>
+      <footer>
+        <img
+          src="img/valid-css-v.svg"
+          alt="W3C CSS Validator Icon"
+          width="100"
+        />
+      </footer>
     </div>
-    <div>
-      <ol>
-        <li>0.75 X</li>
-        <li>X</li>
-        <li>1.20 X</li>
-      </ol>
-    </div>
-    <hr size="2px" color="black" />
-    <footer>                      
-    </footer>
   </body>
 </html>

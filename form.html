@@ -3,34 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Formulario" />
+    <meta name="description" content="Lista de la compra en HTML y CSS" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="/carrito-favicon.png" type="image/x-icon" />
-    <title>Formulario</title>
+    <link
+      rel="shortcut icon"
+      href="shopping-bag-svgrepo-com.svg"
+      type="image/x-icon"
+    />
+    <title>Lista de la compra</title>
   </head>
   <body>
     <header>
       <h1>Lista de la compra</h1>
       <nav>
         <ul>
-          <li>Principal</li>
-          <li>Lista</li>
-          <li>Acerca de</li>
+          <li><a href="#">Principal</a></li>
+          <li>
+            <a href="#"><strong>Lista</strong></a>
+          </li>
+          <li><a href="#">Acerca de</a></li>
         </ul>
       </nav>
     </header>
-    <section>
-      <img src="/-favicon.svg" height="5%" width="5%" />
-      <h2>2/3 Comprados</h2>
-    </section>
-    <section>
-      <h1>Editar artículo</h1>
-      <h3>Nombre</h3>
-      <hr size="2px" color="black" />
-      <h3>Precio</h3>
-      <hr size="2px" color="black" />
-      <button type="button">Modificar</button>
-    </section>
-    <footer>AQUI PONER EL COLOR</footer>
+    <div>
+      <main>
+        <section>
+          <a href="index.html"><div></div></a>
+          <h2>2/3 comprados</h2>
+        </section>
+        <section>
+          <form>
+            <h2>Editar artículo</h2>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" />
+            <label for="precio">Precio</label>
+            <input type="text" name="precio" />
+            <input type="submit" name="modificar" value="Modificar" />
+          </form>
+        </section>
+      </main>
+      <footer>
+        <img
+          src="img/valid-css-v.svg"
+          alt="W3C CSS Validator Icon"
+          width="100"
+        />
+      </footer>
+    </div>
   </body>
 </html>
